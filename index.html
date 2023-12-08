@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de darksouls</title>
+    <link rel="stylesheet" href="CSSRecursos.css">
+    <!-- ---Primer Error al poner mal el nombre de la liga al css con lo cual ya no pone ningun estilo a la pagina y se queda solo lo que tenga el html  la liga correcta es "CSS/Recursos.css" -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lato:ital,wght@1,900&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e65e8b291b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">Bitter Lemon</a>
+                </div>
+                <nav class="nav">
+                    <a href="#"><i class="fa-solid fa-house-chimney-window"></i>Inicio</a>
+                    <a href="#"><i class="fa-solid fa-people-robbery"></i>Nosotros</a>
+                    <a href="#"><i class="fa-solid fa-bell-concierge"></i>Servicios</a>
+                    <a href="#"><i class="fa-regular fa-newspaper"></i>Noticias</a>
+                    <a href="#"><i class="fa-solid fa-square-phone"></i>Contactos</a>
+                </nav>
+                <div class="social">
+                    <div><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></div>
+                </div>
+            </header>
+                <!-- ---Segundo Error Se cierra la etiqueta header mucho antes de que se haya teminado esta seccion ya que por esto se mueve todo e incluso afecta al cuerpo de la instruccion  -->
+            </div>
+            <div class="texto-principal">
+                <h1 class="h1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis exercitationem libero pariatur hic veritatis dolorem illum, aliquid officia aut cumque incidunt! Voluptate voluptas, nisi harum asperiores alias atque illo reiciendis similique, magni totam perferendis. Facilis, aperiam! Necessitatibus id odit sed distinctio perspiciatis totam numquam repudiandae? Possimus, dolorum corporis. Repellendus, adipisci.</h1>
+            </div>
+        
+        <!-- ---Aqui se deberia cerrar la etiqueta header para que pueda funcionar todo correctamente -->
+        <section class="section">
+            <div class="articulos">
+                <article class="articulo">
+                <img src="Imagenes/Solaire.jpg" alt="">
+                <h3>6 de septiembre del 2023</h3>
+                <h2>Novedades</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero at incidunt, distinctio saepe esse vitae atque rem nam autem maxime illum sequi veritatis sint dolores odio neque quas porro inventore.</p></article>
+            
+                <article class="articulo">
+                    <img src="Imagenes/Solaire.jpg"alt="">
+                    <h3>6 de septiembre del 2023</h3>
+                    <h2>Novedades</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero at incidunt, distinctio saepe esse vitae atque rem nam autem maxime illum sequi veritatis sint dolores odio neque quas porro inventore.</p></article>
+                    <article class="articulo">
+                        <img src="Imagenes/Solaire.jpg" alt="">
+                        <h3>6 de septiembre del 2023</h3>
+                        <h2>Novedades</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero at incidunt, distinctio saepe esse vitae atque rem nam autem maxime illum sequi veritatis sint dolores odio neque quas porro inventore.</p></article>
+                        <article class="articulo">
+                            <img src="Imagenes/Solaire.jpg" alt="">
+                            <h3>6 de septiembre del 2023</h3>
+                            <h2>Novedades</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero at incidunt, distinctio saepe esse vitae atque rem nam autem maxime illum sequi veritatis sint dolores odio neque quas porro inventore.</p></article>
+                <nav class="navegacion">
+                    <a href="#">Inicio</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">final</a>
+                </nav>
+            </div>
+        </section>
+        <!-- ---Tercer error confusion al cerrar la etiqueta </section> con lo cual se esta afectando a como tenemos declarado que seccione con la parte de publicidad que tienen que estar alado pero al cerrarse antes ya no se afecta la clase "Section" sobre la clase "aside"-->
+            <aside class="aside">
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img src="Imagenes/Solaire.jpg" alt="">
+                </div>
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img src="Imagenes/Solaire.jpg" alt="">
+                </div>
+            </aside>
+        
+       <!-- ---Aqui es donde deberia cerrar la etiqueta</section> para que pueda afectar sobre la que tiene publicidad -->
+
+        <footer class="footer">
+            <nav class="pie">
+                <a href="#">Desarrollado por el mejor equipo</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

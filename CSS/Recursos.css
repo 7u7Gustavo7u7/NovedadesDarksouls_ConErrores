@@ -1,0 +1,195 @@
+/* Establece márgenes y relleno a 0 para todos los elementos, y utiliza el modelo de caja border-box */
+* {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Configuración de la fuente para el cuerpo del documento */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Elimina el subrayado predeterminado de los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Contenedor principal con diseño de columna */
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Encabezado con imagen de fondo y configuración */
+.header {
+    display: flex;
+    background: url(../Imagenes/paisajevonisho.png);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    flex-flow: column nowrap; /* La imagen se extiende por todo el encabezado */
+}
+
+/* Menú con fondo semitransparente y configuración */
+.menu {
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rosybrown;
+}
+
+/* Logotipo con estilo y configuración */
+.logo {
+    flex: 1 1 auto;
+}
+
+.logo a {
+    color: white;
+    font-size: 30px;
+}
+
+.logo a:hover {
+    color: #c700c7;
+}
+
+/* Barra de navegación principal con estilo y configuración */
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: #c700c7;
+}
+
+/* Sección de redes sociales con estilo y configuración */
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 18px;
+    color: white;
+    padding: 0 5px;
+}
+
+.social a:hover {
+    color: #c700c7;
+}
+
+/* Contenedor para el texto principal con fondo verde oscuro */
+.texto-principal {
+    background: #435334;
+}
+
+/* Encabezado de primer nivel con fondo verde */
+.h1 {
+    background: #557A46;
+}
+
+/* Sección principal con fondo negro y diseño de columna */
+.section {
+    background: #000;
+    display: flex;
+}
+
+/* Contenedor para artículos con fondo morado oscuro y diseño de fila envolvente */
+.articulos {
+    background: #331D2C;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Estilo del artículo individual con fondo morado más claro */
+.articulo {
+    background: #3F2E3E;
+    flex: 40%;
+}
+
+/* Navegación lateral con fondo rosa grisáceo */
+.navegacion {
+    background: #A78295;
+    flex: 1 1 100%;
+}
+
+/* Contenedor aside con fondo marrón oscuro */
+.aside {
+    background: #643843;
+    flex: 1 1 auto;
+}
+
+/* Publicidad dentro del aside con fondo amarillo marrón */
+.publicidad {
+    background: #CBB279;
+}
+
+/* Pie de página con fondo azul oscuro y centrado del contenido */
+.footer {
+    background: #2d2f3b;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenedor para el pie de página con fondo púrpura oscuro y bordes redondeados */
+.pie {
+    background: #3a1537;
+    border-radius: 12%;
+}
+
+/* Estilo de los enlaces en el pie de página */
+.pie a {
+    color: #ffffff;
+    font-display: initial;
+}
+
+.pie a:hover{
+    color:gold;
+}
+
+/* Consulta de medios para pantallas de hasta 800px de ancho */
+@media all and (max-width: 800px) {
+    /* Cambia la dirección de la sección principal a columna */
+    .section {
+        flex-direction: column;
+    }
+
+    /* Cambia la dirección del menú a columna y ajusta la altura automáticamente */
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Muestra el aside en el centro */
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Consulta de medios para pantallas de hasta 600px de ancho */
+@media all and (max-width: 600px) {
+    /* Cambia la dirección de los artículos a columna */
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+/* Consulta de medios para pantallas de hasta 400px de ancho */
+@media all and (max-width: 400px) {
+    /* Cambia la dirección del aside a columna */
+    .aside {
+        flex-direction: column;
+    }
+}
